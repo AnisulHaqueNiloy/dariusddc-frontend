@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Calendar } from "lucide-react";
 import coin from "@/assets/checkout/coin.png";
 import Image from "next/image";
-import { paypal, stripe, visa } from "../checkout/icon";
+import { paypal, stripe, visa } from "@/Components/Icons";
 import { IoIosArrowBack } from "react-icons/io";
 
 interface Product {
