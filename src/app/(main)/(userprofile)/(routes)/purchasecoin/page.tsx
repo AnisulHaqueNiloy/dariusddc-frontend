@@ -2,6 +2,7 @@ import coin from "@/assets/percesCoin.png";
 import coinsingle from "@/assets/icons/coin.png";
 import tringel from "@/assets/Rectangle.svg";
 import { ChevronLeft } from "lucide-react";
+import Link from "next/link";
 
 export default function page() {
   const coinPackages = [
@@ -52,7 +53,7 @@ export default function page() {
     },
   ];
   return (
-   <div>
+    <div>
       <div className="ml-1 md:ml-0">
         {/* Coin Grid */}
         <div className="max-w-7xl mx-auto px-4 pb-12">
@@ -119,9 +120,9 @@ export default function page() {
                   </h3>
 
                   {/* Buy Button */}
-                  <button className="w-full bg-gradient-to-r from-[#FC9440] to-[#E45C04] text-center text-sm md:text-xl font-normal cursor-pointer shadow-[inset_1.5px_1px_2px_#ffffff] hover:from-orange-600 hover:to-orange-700 text-white py-2 px-6 rounded-full transform hover:scale-105 transition-all duration-200 active:scale-95 whitespace-nowrap">
+                  <Link href={'/checkout'} className="w-full bg-gradient-to-r from-[#FC9440] to-[#E45C04] text-center text-sm md:text-xl font-normal cursor-pointer shadow-[inset_1.5px_1px_2px_#ffffff] hover:from-orange-600 hover:to-orange-700 text-white py-2 px-6 rounded-full transform hover:scale-105 transition-all duration-200 active:scale-95 whitespace-nowrap">
                     Buy for ${pkg.price.toFixed(2)}
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
