@@ -64,7 +64,7 @@ export default function MoreSimilarRaffelList() {
   );
 
   return (
-    <div className=" bg-gray-100 py-8">
+    <div className="py-8">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-18">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
