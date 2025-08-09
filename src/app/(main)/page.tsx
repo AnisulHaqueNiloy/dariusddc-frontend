@@ -8,20 +8,29 @@ import TestimonialsCarousel from "@/Components/home/TestomonialCarusol";
 import TombolyHowItWorks from "@/Components/home/TomboHowItwork";
 import React from "react";
 
+
 export default function Home() {
   return (
-    <div className=" px-5">
-      <div className="flex  flex-col md:flex-row max-w-[1600px] mx-auto px-4 sm:px-0 lg:gap-16">
-        <div className="md:w-[250px] flex-shrink-0">
+    <div className=" ">
+
+      <div className="flex flex-col xl:flex-row max-w-[1600px] mx-auto px-4 xl:px-0 gap-8">
+
+
+        <div className="hidden xl:block xl:w-64 flex-shrink-0">
           <CategoryMenu />
         </div>
-        <div className="flex-1 ">
+
+
+
+        <div className="flex-1 space-y-8">
           <PromoCarousel />
           <EndingProducts />
         </div>
       </div>
-      <div className="max-w-[1600px] space-y-16 mx-auto px-4  mt-16 md:px-0">
 
+
+
+      <div className="max-w-[1600px] w-full mx-auto px-4 xl:px-0 mt-16 space-y-16">
         <CategoryCarousel />
         <RecentsLists />
         <TombolyHowItWorks />
@@ -31,4 +40,3 @@ export default function Home() {
     </div>
   );
 }
-

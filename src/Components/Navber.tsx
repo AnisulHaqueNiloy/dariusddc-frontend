@@ -93,21 +93,21 @@ export function Navbar() {
 
               {/* Navigation Items */}
               <div className="hidden lg:flex items-center space-x-4">
-                <button className=" hover:bg-blue-600 px-2  rounded transition-colors">
+                <Link href={'/about'} className=" hover:bg-blue-300 px-2  rounded transition-colors cursor-pointer">
+                  About
+                </Link>
+                <Link href={'/contact'} className=" hover:bg-blue-300 px-2  rounded transition-colors cursor-pointer">
+                  Contact
+                </Link>
+                <Link href={'#'} className=" hover:bg-blue-300 px-2  rounded transition-colors cursor-pointer">
                   Popular
-                </button>
-                <button className=" hover:bg-blue-600 px-2  rounded transition-colors">
-                  Best Deals
-                </button>
-                <button className=" hover:bg-blue-600 px-2  rounded transition-colors">
-                  Recently Viewed
-                </button>
-                <button className=" hover:bg-blue-600 px-2  rounded transition-colors">
+                </Link>
+                {/* <button className=" hover:bg-blue-600 px-2  rounded transition-colors">
                   Trending
                 </button>
                 <button className=" hover:bg-blue-600 px-2  rounded transition-colors">
                   Raffle Draw
-                </button>
+                </button> */}
               </div>
             </div>
 

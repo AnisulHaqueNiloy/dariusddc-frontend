@@ -24,7 +24,7 @@ export default function ProductCard({ product, toggleFavorite }: IProps) {
   return (
     <div className="w-full ">
       {/* Product Card */}
-      <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
+      <div className="bg-white rounded-3xl  overflow-hidden">
         {/* Product Image Container */}
         <div className="relative">
           <div className="flex absolute w-full justify-between items-center px-3 py-3">

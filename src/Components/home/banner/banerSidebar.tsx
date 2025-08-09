@@ -17,7 +17,7 @@ const categories = [
 
 export default function CategoryMenu() {
   return (
-    <div className="w-80 hidden md:block bg-white border-2 border-blue-200 border-t-0 rounded-lg shadow-sm p-3 min-h-screen">
+    <div className="w-80 hidden md:block bg-white rounded-t-0 border-2 border-t-0 border-blue-200 rounded-b-lg shadow-sm p-3 min-h-screen lg:min-h-[130vh]">
       <ul className="space-y-2">
         {categories.map((category, index) => (
           <li key={index}>

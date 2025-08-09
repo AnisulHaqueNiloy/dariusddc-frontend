@@ -1,13 +1,16 @@
 "use client";
 
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import promoImage from "../../../assets/bannerPromo.png";
 
+
 import "swiper/css";
 import "swiper/css/pagination";
 import { Button } from "@/Components/ui/button";
+
 
 export default function PromoCarousel() {
   const slides = [
@@ -31,6 +34,7 @@ export default function PromoCarousel() {
     },
   ];
 
+
   return (
     <div className="w-full max-w-[1180px] mt-5 mx-auto me-9">
       <Swiper
@@ -38,12 +42,14 @@ export default function PromoCarousel() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
+        spaceBetween={50}
         className="rounded-2xl promo-carousel-pagination overflow-hidden"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col md:flex-row items-center bg-[#0099E6] px-4 sm:px-6 md:px-8 rounded-2xl overflow-hidden h-[362px]">
-              
+
+            <div className="flex flex-col gap-8 sm:flex-row md:flex-row lg:flex-row items-center bg-[#0099E6] px-4 sm:px-6 md:px-8 rounded-2xl overflow-hidden h-[362px]">
+
               {/* Text Section */}
               <div className="w-full md:w-1/2 lg:w-[45%] text-center md:text-left text-white md:pr-6 lg:pr-12 py-6 md:py-8">
                 <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-3 md:mb-4 leading-tight">
@@ -56,12 +62,13 @@ export default function PromoCarousel() {
                   className="font-semibold text-sm sm:text-base px-6 sm:px-10 py-4 sm:py-7 rounded-full cursor-pointer
                              bg-[linear-gradient(to_right,_#37B9FF,_#027BBD)]
                              shadow-[inset_0px_4px_6px_rgba(255,255,255,0.3)]
-                             text-white transition-all duration-200
+text-white transition-all duration-200
                              hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0099E6]"
                 >
                   {slide.buttonText}
                 </Button>
               </div>
+
 
               {/* Image Section */}
               <div className="w-full md:w-1/2 lg:w-[55%] flex justify-center items-center relative mt-4 md:mt-0">
