@@ -73,7 +73,7 @@ export default function TestimonialsCarousel() {
   const [swiperInstance, setSwiperInstance] = useState<any>(null)
 
   return (
-    <div className="w-full  bg-gray-100">
+    <div className="w-full   ">
       <div className="">
         <div className="flex items-center justify-between mb-6 md:mb-8">
           <h2 className="text-2xl md:text-3xl font-bold">Winner's Testimonials</h2>
